@@ -50,7 +50,6 @@ while len(orderWin) < 4:
     for x, player in enumerate(turtleFast):
         if(distance[x] < 1380):
             speed = random.randint(0, 5)
-            player.speed(50)
             player.forward(speed)
             distance[x] += speed
         elif (1380 < distance[x] < 1390):
