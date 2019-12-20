@@ -48,12 +48,12 @@ distance = [0, 0, 0, 0, 0]
 orderWin = []
 while len(orderWin) < 4:
     for x, player in enumerate(turtleFast):
-        if(distance[x] < 80):
+        if(distance[x] < 1380):
             speed = random.randint(0, 5)
             player.speed(50)
             player.forward(speed)
             distance[x] += speed
-        elif (80 < distance[x] < 90):
+        elif (1380 < distance[x] < 1390):
             orderWin.append(str(x))
             player.forward(11)
 
